@@ -1,23 +1,23 @@
 {
-  "name": "exportclassexample",
+  "name": "basicnetapi",
   "version": "1.0.0",
-  "description": "Test export class using nodeJS Syntax style",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon start.js"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "nodemon": "^2.0.2",
+    "shortid": "^2.2.15"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
     "@babel/register": "^7.8.3"
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.2",
-    "shortid": "^2.2.15",
-    "yargs": "^15.1.0"
   }
 }

@@ -4,15 +4,16 @@ const shortid = require('shortid');
 'use strict';
 
 class GameSession {
-    constructor(sessionName, playerID, playerName) {
+    constructor(sessionName) {
         this.sessionName = sessionName;
         this.sessionID = shortid.generate();
-        // this.playerID = playerID;
-        // this.playerName = playerName;
+        //this.playerID = playerID;
+        //this.playerName = playerName;
     }
 
     ChangeSessionName(newSessionName) {
         this.sessionName = newSessionName;
+        console.log(jsonStr);
         return newSessionName;
     }
 
@@ -21,14 +22,16 @@ class GameSession {
         return newSessionID;
     }
 
-    ToJSON() {
+    ToJSON(data) {
         let jsonStr = {
             'sessionName' : this.sessionName,
             'sessionID' : this.sessionID,
-            'playerData' : {
-                
+            'playerData':{
+                'playerID' : String,
+                'playerName' : String
             }
         }
+        console.log(jsonStr);
         return jsonStr;
     }
 }
